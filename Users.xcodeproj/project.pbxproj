@@ -47,6 +47,7 @@
 		D244BDFF1D599F9A00D905F3 /* UsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D244BE031D599F9A00D905F3 /* UsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUITests.swift; sourceTree = "<group>"; };
 		D244BE051D599F9A00D905F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D244BE4C1D5AF37C00D905F3 /* Users.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Users.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		D244BDE21D599F9A00D905F3 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				D244BE4C1D5AF37C00D905F3 /* Users.entitlements */,
 				D244BDE31D599F9A00D905F3 /* AppDelegate.swift */,
 				D244BDE51D599F9A00D905F3 /* ViewController.swift */,
 				D244BDE71D599F9A00D905F3 /* Main.storyboard */,
@@ -193,7 +195,13 @@
 				TargetAttributes = {
 					D244BDDF1D599F9A00D905F3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 25EZUPR5QA;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D244BDF31D599F9A00D905F3 = {
 						CreatedOnToolsVersion = 8.0;
@@ -412,6 +420,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Users/Users.entitlements;
+				DEVELOPMENT_TEAM = 25EZUPR5QA;
 				INFOPLIST_FILE = Users/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vera.Users;
@@ -424,6 +434,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Users/Users.entitlements;
+				DEVELOPMENT_TEAM = 25EZUPR5QA;
 				INFOPLIST_FILE = Users/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vera.Users;
